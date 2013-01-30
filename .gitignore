@@ -3,6 +3,7 @@ executable/*
 !executable/readme.txt
 mkgmap-stranger/_intermediate
 mkgmap-stranger/_split
+mkgmap-stranger/stranger/stranger.typ
 *.pbf
 *.o5m
 toftp.bat

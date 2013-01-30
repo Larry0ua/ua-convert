@@ -91,7 +91,7 @@ Type=0x10f01,12
 
 [_polygon]
 Type=0x02
-String1=0x19,жилая зона
+String1=0x19,жила зона
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #D3D39B"
@@ -100,7 +100,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x03
-String1=0x19,населённый пункт
+String1=0x19,населений пункт
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #B0B070"
@@ -109,7 +109,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x04
-String1=0x19,охраняемая зона
+String1=0x19,зона охороняється
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #B6B0B0"
@@ -127,7 +127,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x07
-String1=0x19,аэропорт
+String1=0x19,аеропорт
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #D1CED4"
@@ -136,7 +136,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x08
-String1=0x19,торговый центр
+String1=0x19,торговий центр
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #7D5A57"
@@ -145,7 +145,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x0a
-String1=0x19,школа/колледж
+String1=0x19,школа/коледж
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #808040"
@@ -154,7 +154,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x0b
-String1=0x19,госпиталь
+String1=0x19,госпіталь
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #7D6280"
@@ -163,7 +163,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x0c
-String1=0x19,индустриальная зона
+String1=0x19,індустриальна зона
 ExtendedLabels=Y
 FontStyle=SmallFont
 CustomColor=No
@@ -216,7 +216,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x13
-String1=0x19,здание
+String1=0x19,будівля
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #8B8BA0"
@@ -234,7 +234,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x18
-String1=0x19,площадка для гольфа
+String1=0x19,майданчик для гольфа
 ExtendedLabels=N
 Xpm="32 32 2 1"
 "! c #8080C0"
@@ -286,7 +286,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x1a
-String1=0x19,кладбище
+String1=0x19,кладовище
 ExtendedLabels=N
 Xpm="32 32 2 1"
 "! c #659C6D"
@@ -423,7 +423,7 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x21
-String1=0x19,госпиталь
+String1=0x19,госпіталь
 ExtendedLabels=N
 Xpm="32 32 2 1"
 "! c #FF80C0"
@@ -466,7 +466,7 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x22
-String1=0x19,гаражи
+String1=0x19,гаражі
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #C0C0A0"
@@ -484,7 +484,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x24
-String1=0x19,учебное заведение
+String1=0x19,навчальний заклад
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #C0CC92"
@@ -493,7 +493,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x25
-String1=0x19,детский сад
+String1=0x19,дитячий садок
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #808040"
@@ -502,7 +502,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x26
-String1=0x19,детский сад
+String1=0x19,дитячий садок
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #C0CC92"
@@ -511,7 +511,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x27
-String1=0x19,гаражи
+String1=0x19,гаражі
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #707060"
@@ -520,7 +520,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x2a
-String1=0x19,рынок
+String1=0x19,ринок
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #B3A285"
@@ -538,7 +538,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x2c
-String1=0x19,ледовый стадион
+String1=0x19,льодовий стадіон
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #80C0C0"
@@ -547,7 +547,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x2d
-String1=0x19,пешеходная площадь
+String1=0x19,пішохідна площа
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #BEBEAB"
@@ -556,7 +556,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x2e
-String1=0x19,площадь
+String1=0x19,площа
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #D9D9CE"
@@ -565,7 +565,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x2f
-String1=0x19,навес
+String1=0x19,навіс
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #706060"
@@ -637,7 +637,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x3f
-String1=0x19,водохранилище
+String1=0x19,водосховище
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #415CA6"
@@ -654,7 +654,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x4d
-String1=0x19,ледник
+String1=0x19,льодовик
 ExtendedLabels=N
 Xpm="32 32 2 1"
 "! c #7B95FF"
@@ -697,7 +697,7 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x4e
-String1=0x19,огород
+String1=0x19,город
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #CEBB88"
@@ -706,7 +706,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x4f
-String1=0x19,кустарник
+String1=0x19,чагарник
 ExtendedLabels=N
 Xpm="32 32 2 1"
 "! c #70B070"
@@ -749,7 +749,7 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x50
-String1=0x19,лес
+String1=0x19,ліс
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #B0CF99"
@@ -801,7 +801,7 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x10f01
-String1=0x19,стройка
+String1=0x19,будівництво
 ExtendedLabels=N
 Xpm="32 32 2 1"
 "! c #C00000"
@@ -887,7 +887,7 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x11518
-String1=0x19,пустошь
+String1=0x19,пустка
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #E3D8CC"
@@ -896,7 +896,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x11519
-String1=0x19,песок
+String1=0x19,пісок
 ExtendedLabels=N
 Xpm="32 32 2 1"
 "! c #C08040"
@@ -948,7 +948,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x1151b
-String1=0x19,отмель
+String1=0x19,мілина
 ExtendedLabels=N
 Xpm="32 32 2 1"
 "! c #00C0C0"
@@ -991,7 +991,7 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x1151c
-String1=0x19,пирс
+String1=0x19,пірс
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #D9D9CE"
@@ -1000,7 +1000,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x1151d
-String1=0x19,камни
+String1=0x19,каміння
 ExtendedLabels=N
 Xpm="32 32 2 1"
 "! c #704030"
@@ -1132,7 +1132,7 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x11601
-String1=0x19,фруктовый сад
+String1=0x19,фруктовий сад
 ExtendedLabels=N
 Xpm="32 32 2 1"
 "! c #588053"
@@ -1175,7 +1175,7 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x11602
-String1=0x19,растительный питомник
+String1=0x19,рослинний розплідник
 ExtendedLabels=N
 Xpm="32 32 2 1"
 "! c #70B070"
@@ -1261,7 +1261,7 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x11604
-String1=0x19,хвойный лес
+String1=0x19,хвойний ліс
 ExtendedLabels=N
 Xpm="32 32 2 1"
 "! c #78AC51"
@@ -1304,7 +1304,7 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x11605
-String1=0x19,лиственный лес
+String1=0x19,листяний ліс
 ExtendedLabels=N
 Xpm="32 32 2 1"
 "! c #78AC51"
@@ -1347,7 +1347,7 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x11606
-String1=0x19,смешанный лес
+String1=0x19,змішаний ліс
 ExtendedLabels=N
 Xpm="32 32 2 1"
 "! c #78AC51"
@@ -1390,7 +1390,7 @@ Xpm="32 32 2 1"
 
 [_polygon]
 Type=0x11607
-String1=0x19,жилая проезжая часть
+String1=0x19,житлова проїжджа частина
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #FFFFD0"
@@ -1399,7 +1399,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x11608
-String1=0x19,проезжая часть
+String1=0x19,проїжджа частина
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #CC7519"
@@ -1408,7 +1408,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x11609
-String1=0x19,проезжая часть
+String1=0x19,проїжджа частина
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #CC5119"
@@ -1417,7 +1417,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x11610
-String1=0x19,проезжая часть
+String1=0x19,проїжджа частина
 ExtendedLabels=N
 Xpm="0 0 1 0"
 "1 c #B09900"
@@ -1448,7 +1448,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #CC7519"
 "2 c #3D1607"
-String1=0x19,магистраль
+String1=0x19,магістраль
 ExtendedLabels=N
 [end]
 
@@ -1461,7 +1461,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #CC5119"
 "2 c #3D1607"
-String1=0x19,основная дорога
+String1=0x19,основна дорога
 ExtendedLabels=N
 [end]
 
@@ -1474,7 +1474,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #CC7519"
 "2 c #63310C"
-String1=0x19,второстепенная дорога
+String1=0x19,другорядна дорога
 ExtendedLabels=N
 [end]
 
@@ -1487,7 +1487,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #B09900"
 "2 c #544900"
-String1=0x19,третьестепенная дорога
+String1=0x19,третьорядна дорога
 ExtendedLabels=N
 [end]
 
@@ -1500,7 +1500,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFFD0"
 "2 c #A0A0A0"
-String1=0x19,улица
+String1=0x19,вулиця
 ExtendedLabels=N
 [end]
 
@@ -1541,7 +1541,7 @@ Xpm="32 2 2  1"
 "!!!!####!!!!####!!!!####!!!!####"
 "!!!!####!!!!####!!!!####!!!!####"
 ;12345678901234567890123456789012
-String1=0x19,ледовая переправа
+String1=0x19,льодова переправа
 ExtendedLabels=N
 [end]
 
@@ -1563,7 +1563,7 @@ UseOrientation=N
 LineWidth=4
 Xpm="0 0 1 0"
 "1 c #808080"
-String1=0x19,пешеходная улица
+String1=0x19,пішохідна вулиця
 ExtendedLabels=N
 [end]
 
@@ -1622,7 +1622,7 @@ UseOrientation=Y
 LineWidth=1
 Xpm="0 0 1 0"
 "1 c #415CA6"
-String1=0x19,ручей
+String1=0x19,струмок
 ExtendedLabels=N
 [end]
 
@@ -1637,7 +1637,7 @@ Xpm="32 3 2  1"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 "    !       !       !       !   "
 ;12345678901234567890123456789012
-String1=0x19,забор
+String1=0x19,паркан
 ExtendedLabels=N
 [end]
 
@@ -1664,7 +1664,7 @@ Xpm="32 1 2  1"
 "  c none"
 "!!!!!!!!  !  !  !!!!!!!!  !  !  "
 ;12345678901234567890123456789012
-String1=0x19,граница района
+String1=0x19,кордон района
 ExtendedLabels=Y
 FontStyle=SmallFont
 CustomColor=Day
@@ -1682,7 +1682,7 @@ Xpm="32 3 2  1"
 "!!!!!!  !!!!!!  !!!!!!  !!!!!!  "
 "!    !  !    !  !    !  !    !  "
 ;12345678901234567890123456789012
-String1=0x19,граница субъекта
+String1=0x19,кордон суб'єкта
 ExtendedLabels=Y
 FontStyle=SmallFont
 CustomColor=Day
@@ -1701,7 +1701,7 @@ Xpm="32 4 2  1"
 "!!!!!!!!!!  !!  !!!!!!!!!!  !!  "
 "!        !      !        !      "
 ;12345678901234567890123456789012
-String1=0x19,государственная граница
+String1=0x19,державний кордон
 ExtendedLabels=Y
 FontStyle=SmallFont
 CustomColor=Day
@@ -1715,7 +1715,7 @@ UseOrientation=Y
 LineWidth=2
 Xpm="0 0 1 0"
 "1 c #415CA6"
-String1=0x19,река
+String1=0x19,ріка
 ExtendedLabels=N
 [end]
 
@@ -1758,7 +1758,7 @@ BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #968CA3"
 "2 c #FFFFFF"
-String1=0x19,взлётная полоса
+String1=0x19,злітна полоса
 ExtendedLabels=N
 [end]
 
@@ -1769,7 +1769,7 @@ UseOrientation=Y
 LineWidth=1
 Xpm="0 0 1 0"
 "1 c #804080"
-String1=0x19,трубопровод
+String1=0x19,трубопровід
 ExtendedLabels=N
 [end]
 
@@ -1780,7 +1780,7 @@ UseOrientation=Y
 LineWidth=1
 Xpm="0 0 1 0"
 "1 c #FF4040"
-String1=0x19,ЛЭП
+String1=0x19,ЛЕП
 ExtendedLabels=N
 [end]
 
@@ -1793,7 +1793,7 @@ Xpm="32 1 2  1"
 "  c none"
 "   !!!!!!!!!!     !!!!!!!!!!!   "
 ;12345678901234567890123456789012
-String1=0x19,просека
+String1=0x19,просіка
 ExtendedLabels=N
 [end]
 
@@ -1804,7 +1804,7 @@ UseOrientation=Y
 LineWidth=3
 Xpm="0 0 1 0"
 "1 c #C00000"
-String1=0x19,контрольный пункт
+String1=0x19,контрольний пункт
 ExtendedLabels=N
 [end]
 
@@ -1817,7 +1817,7 @@ BorderWidth=3
 Xpm="0 0 2 0"
 "1 c #B56816"
 "2 c #202020"
-String1=0x19,мост
+String1=0x19,міст
 ExtendedLabels=N
 [end]
 
@@ -1830,7 +1830,7 @@ BorderWidth=2
 Xpm="0 0 2 0"
 "1 c #B56816"
 "2 c #202020"
-String1=0x19,мост
+String1=0x19,міст
 ExtendedLabels=N
 [end]
 
@@ -1843,7 +1843,7 @@ BorderWidth=2
 Xpm="0 0 2 0"
 "1 c #B54816"
 "2 c #202020"
-String1=0x19,мост
+String1=0x19,міст
 ExtendedLabels=N
 [end]
 
@@ -1856,7 +1856,7 @@ BorderWidth=2
 Xpm="0 0 2 0"
 "1 c #B56816"
 "2 c #202020"
-String1=0x19,мост
+String1=0x19,міст
 ExtendedLabels=N
 [end]
 
@@ -1869,7 +1869,7 @@ BorderWidth=2
 Xpm="0 0 2 0"
 "1 c #A48F00"
 "2 c #202020"
-String1=0x19,мост
+String1=0x19,міст
 ExtendedLabels=N
 [end]
 
@@ -1882,7 +1882,7 @@ BorderWidth=2
 Xpm="0 0 2 0"
 "1 c #DDDDB0"
 "2 c #202020"
-String1=0x19,пешеходный мост
+String1=0x19,пішохідний міст
 ExtendedLabels=N
 [end]
 
@@ -1898,7 +1898,7 @@ Xpm="32 4 2  1"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 "    !       !       !       !   "
 ;12345678901234567890123456789012
-String1=0x19,забор (стена)
+String1=0x19,стіна
 ExtendedLabels=N
 [end]
 
@@ -1911,7 +1911,7 @@ BorderWidth=2
 Xpm="0 0 2 0"
 "1 c #DDDDB0"
 "2 c #202020"
-String1=0x19,мост
+String1=0x19,міст
 ExtendedLabels=N
 [end]
 
@@ -1924,7 +1924,7 @@ BorderWidth=2
 Xpm="0 0 2 0"
 "1 c #4000FF"
 "2 c #00FFFF"
-String1=0x19,простая трасса
+String1=0x19,проста траса
 ExtendedLabels=N
 [end]
 
@@ -1937,7 +1937,7 @@ BorderWidth=2
 Xpm="0 0 2 0"
 "1 c #FF0000"
 "2 c #00FFFF"
-String1=0x19,средняя трасса
+String1=0x19,середня траса
 ExtendedLabels=N
 [end]
 
@@ -1950,7 +1950,7 @@ BorderWidth=2
 Xpm="0 0 2 0"
 "1 c #000000"
 "2 c #00FFFF"
-String1=0x19,сложная трасса
+String1=0x19,складна траса
 ExtendedLabels=N
 [end]
 
@@ -1963,7 +1963,7 @@ BorderWidth=2
 Xpm="0 0 2 0"
 "1 c #00C000"
 "2 c #00FFFF"
-String1=0x19,трасса для новичков
+String1=0x19,траса для новачків
 ExtendedLabels=N
 [end]
 
@@ -2029,7 +2029,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #CC7519"
 "2 c #3D1607"
-String1=0x19,магистраль
+String1=0x19,магістраль
 ExtendedLabels=N
 [end]
 
@@ -2042,7 +2042,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #CC5119"
 "2 c #3D1607"
-String1=0x19,основная дорога
+String1=0x19,основна дорога
 ExtendedLabels=N
 [end]
 
@@ -2055,7 +2055,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #CC7519"
 "2 c #63310C"
-String1=0x19,второстепенная дорога
+String1=0x19,другорядна дорога
 ExtendedLabels=N
 [end]
 
@@ -2068,7 +2068,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #B09900"
 "2 c #544900"
-String1=0x19,третьестепенная дорога
+String1=0x19,третьорядна дорога
 ExtendedLabels=N
 [end]
 
@@ -2081,7 +2081,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFFD0"
 "2 c #A0A0A0"
-String1=0x19,улица
+String1=0x19,вулиця
 ExtendedLabels=N
 [end]
 
@@ -2105,7 +2105,7 @@ UseOrientation=N
 LineWidth=4
 Xpm="0 0 1 0"
 "1 c #808080"
-String1=0x19,пешеходная улица
+String1=0x19,пішохідна вулиця
 ExtendedLabels=N
 [end]
 
@@ -2122,7 +2122,7 @@ Xpm="32 5 2  1"
 "   !!!!!!    !!!!!!     !!!!!!  "
 "                                "
 ;12345678901234567890123456789012
-String1=0x19,фуникулёр
+String1=0x19,фунікулер
 ExtendedLabels=Y
 FontStyle=SmallFont
 CustomColor=No
@@ -2160,7 +2160,7 @@ Xpm="32 5 2  1"
 "!!!!    !!!!    !!!!    !!!!    "
 " !!              !!             "
 ;12345678901234567890123456789012
-String1=0x19,смешанная канатка
+String1=0x19,змішана канатка
 ExtendedLabels=Y
 FontStyle=SmallFont
 CustomColor=No
@@ -2179,7 +2179,7 @@ Xpm="32 5 2  1"
 "!!!!    !!!!    !!!!    !!!!    "
 " !!      !!      !!      !!     "
 ;12345678901234567890123456789012
-String1=0x19,кресельная канатка
+String1=0x19,крісельна канатка
 ExtendedLabels=Y
 FontStyle=SmallFont
 CustomColor=No
@@ -2215,7 +2215,7 @@ Xpm="32 3 2  1"
 "                                "
 "    !!!!    !!!!    !!!!    !!!!"
 ;12345678901234567890123456789012
-String1=0x19,канатная дорога
+String1=0x19,канатна дорога
 ExtendedLabels=Y
 FontStyle=SmallFont
 CustomColor=No
@@ -2234,7 +2234,7 @@ Xpm="32 5 2  1"
 " !   !   !   !   !   !   !   !  "
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
-String1=0x19,обрыв
+String1=0x19,урвище
 ExtendedLabels=N
 [end]
 
@@ -2245,7 +2245,7 @@ UseOrientation=Y
 LineWidth=10
 Xpm="0 0 1 0"
 "1 c #808090"
-String1=0x19,насыпь
+String1=0x19,насип
 ExtendedLabels=N
 [end]
 
@@ -2291,7 +2291,7 @@ Xpm="32 4 2  1"
 "!!!!!!!!########!!!!!!!!########"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
-String1=0x19,железная дорога
+String1=0x19,залізна дорога
 ExtendedLabels=N
 [end]
 
@@ -2329,7 +2329,7 @@ BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #968CA3"
 "2 c #FFFFFF"
-String1=0x19,подъезд к взлётной полосе
+String1=0x19,під'їзд до злітної смуги
 ExtendedLabels=N
 [end]
 
@@ -2358,7 +2358,7 @@ BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #404040"
 "2 c #FFFFFF"
-String1=0x19,железная дорога
+String1=0x19,залізна дорога
 ExtendedLabels=N
 [end]
 
@@ -2369,7 +2369,7 @@ UseOrientation=N
 LineWidth=1
 Xpm="0 0 1 0"
 "1 c #415CA6"
-String1=0x19,река
+String1=0x19,ріка
 ExtendedLabels=N
 [end]
 
@@ -2406,7 +2406,7 @@ Xpm="32 4 2  1"
 "!!!!!!!!########!!!!!!!!########"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
-String1=0x19,заброшенная ж/д
+String1=0x19,покинута з/д
 ExtendedLabels=N
 [end]
 
@@ -2417,7 +2417,7 @@ UseOrientation=N
 LineWidth=2
 Xpm="0 0 1 0"
 "1 c #A06060"
-String1=0x19,заброшенная ж/д
+String1=0x19,покинута з/д
 ExtendedLabels=N
 [end]
 
@@ -2432,7 +2432,7 @@ Xpm="32 3 2  1"
 "!!######!!######!!######!!######"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
-String1=0x19,демонтированная ж/д
+String1=0x19,демонтована з/д
 ExtendedLabels=N
 [end]
 
@@ -2447,7 +2447,7 @@ Xpm="32 3 2  1"
 "!!!!!!!!########!!!!!!!!########"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
-String1=0x19,узкоколейная ж/д
+String1=0x19,вузькоколійна з/д
 ExtendedLabels=N
 [end]
 
@@ -2462,7 +2462,7 @@ Xpm="32 3 2  1"
 "!!!!!!!!########!!!!!!!!########"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
-String1=0x19,заброшенная ужд
+String1=0x19,покинута вузькоколійка
 ExtendedLabels=N
 [end]
 
@@ -2473,7 +2473,7 @@ UseOrientation=N
 LineWidth=1
 Xpm="0 0 1 0"
 "1 c #588053"
-String1=0x19,живая изгородь
+String1=0x19,живопліт
 ExtendedLabels=N
 [end]
 
@@ -2489,7 +2489,7 @@ Xpm="32 4 2  1"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 "  !!!             !!!           "
 ;12345678901234567890123456789012
-String1=0x19,городская стена
+String1=0x19,міська стіна
 ExtendedLabels=N
 [end]
 
@@ -2504,7 +2504,7 @@ Xpm="32 3 2  1"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
-String1=0x19,городская стена
+String1=0x19,міська стіна
 ExtendedLabels=N
 [end]
 
@@ -2522,7 +2522,7 @@ Xpm="32 6 2  1"
 "################################"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
 ;12345678901234567890123456789012
-String1=0x19,магистральный туннель
+String1=0x19,магістральний тунель
 ExtendedLabels=N
 [end]
 
@@ -2539,7 +2539,7 @@ Xpm="32 5 2  1"
 "################################"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
 ;12345678901234567890123456789012
-String1=0x19,туннель
+String1=0x19,тунель
 ExtendedLabels=N
 [end]
 
@@ -2555,7 +2555,7 @@ Xpm="32 4 2  1"
 "################################"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
 ;12345678901234567890123456789012
-String1=0x19,малый туннель
+String1=0x19,малий тунель
 ExtendedLabels=N
 [end]
 
@@ -2619,7 +2619,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FF6500"
 "2 c #FFFF6A"
-String1=0x19,сеть
+String1=0x19,мережа
 ExtendedLabels=Y
 FontStyle=NormalFont
 CustomColor=Day
@@ -2633,7 +2633,7 @@ DaycustomColor:#FF6500
 [_point]
 Type=0x004
 SubType=0x00
-String1=0x19,город
+String1=0x19,місто
 ExtendedLabels=Y
 FontStyle=NormalFont
 CustomColor=No
@@ -2692,7 +2692,7 @@ DayXpm="9 9 38 2"   Colormode=16
 [_point]
 Type=0x008
 SubType=0x00
-String1=0x19,город
+String1=0x19,місто
 ExtendedLabels=N
 DayXpm="9 9 44 2"   Colormode=16
 "!!	c #A55200"
@@ -2805,7 +2805,7 @@ DayXpm="8 8 7 1"   Colormode=16
 [_point]
 Type=0x00b
 SubType=0x00
-String1=0x19,деревня
+String1=0x19,село
 ExtendedLabels=N
 DayXpm="8 8 6 1"   Colormode=16
 "!	c #000000"
@@ -2979,7 +2979,7 @@ DayXpm="14 10 65 2"   Colormode=32
 [_point]
 Type=0x02c
 SubType=0x02
-String1=0x19,памятник
+String1=0x19,пам'ятник
 ExtendedLabels=N
 DayXpm="11 16 6 1"   Colormode=32
 "!	c #000000"  canalalpha=15
@@ -3011,7 +3011,7 @@ DayXpm="11 16 6 1"   Colormode=32
 [_point]
 Type=0x02c
 SubType=0x03
-String1=0x19,библиотека
+String1=0x19,бібліотека
 ExtendedLabels=N
 DayXpm="9 16 3 1"   Colormode=32
 "!	c #000000"  canalalpha=15
@@ -3626,7 +3626,7 @@ DayXpm="9 12 8 1"   Colormode=32
 [_point]
 Type=0x02d
 SubType=0x03
-String1=0x19,кинотеатр
+String1=0x19,кінотеатр
 ExtendedLabels=N
 DayXpm="15 16 138 2"   Colormode=16
 "!!	c #5F5046"
@@ -3855,7 +3855,7 @@ DayXpm="12 12 13 1"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x0d
-String1=0x19,снаряжение
+String1=0x19,спорядження
 ExtendedLabels=N
 DayXpm="16 16 11 1"   Colormode=32
 "!	c #000000"  canalalpha=15
@@ -3892,7 +3892,7 @@ DayXpm="16 16 11 1"   Colormode=32
 [_point]
 Type=0x02f
 SubType=0x04
-String1=0x19,аэродром
+String1=0x19,аеродром
 ExtendedLabels=N
 DayXpm="17 20 14 1"   Colormode=16
 "!	c #000000"
@@ -3936,7 +3936,7 @@ DayXpm="17 20 14 1"   Colormode=16
 [_point]
 Type=0x02f
 SubType=0x05
-String1=0x19,почта
+String1=0x19,пошта
 ExtendedLabels=N
 DayXpm="16 12 71 2"   Colormode=16
 "!!	c #C0C0C0"
@@ -4112,7 +4112,7 @@ DayXpm="9 13 2 1"   Colormode=32
 [_point]
 Type=0x02f
 SubType=0x17
-String1=0x19,остановка
+String1=0x19,зупинка
 ExtendedLabels=N
 DayXpm="13 15 4 1"   Colormode=32
 "!	c #000000"  canalalpha=15
@@ -4141,7 +4141,7 @@ DayXpm="13 15 4 1"   Colormode=32
 [_point]
 Type=0x030
 SubType=0x02
-String1=0x19,госпиталь
+String1=0x19,госпіталь
 ExtendedLabels=N
 DayXpm="14 14 13 1"   Colormode=32
 "!	c #000000"  canalalpha=15
@@ -4178,7 +4178,7 @@ DayXpm="14 14 13 1"   Colormode=32
 [_point]
 Type=0x030
 SubType=0x08
-String1=0x19,пожарная часть
+String1=0x19,пожежна частина
 ExtendedLabels=N
 DayXpm="16 16 148 2"   Colormode=16
 "!!	c #5F0000"
@@ -4382,7 +4382,7 @@ DayXpm="16 16 4 1"   Colormode=16
 [_point]
 Type=0x050
 SubType=0x00
-String1=0x19,питьевая вода
+String1=0x19,питна вода
 ExtendedLabels=N
 DayXpm="9 14 10 1"   Colormode=16
 "!	c #000000"
@@ -4416,7 +4416,7 @@ DayXpm="9 14 10 1"   Colormode=16
 [_point]
 Type=0x059
 SubType=0x00
-String1=0x19,аэропорт
+String1=0x19,аеропорт
 ExtendedLabels=N
 DayXpm="18 18 5 1"   Colormode=32
 "!	c #000000"  canalalpha=15
@@ -4449,7 +4449,7 @@ DayXpm="18 18 5 1"   Colormode=32
 [_point]
 Type=0x059
 SubType=0x04
-String1=0x19,вертолётная площадка
+String1=0x19,гелікоптерний майданчик
 ExtendedLabels=N
 DayXpm="22 13 8 1"   Colormode=16
 "!	c #00458D"
@@ -4480,7 +4480,7 @@ DayXpm="22 13 8 1"   Colormode=16
 [_point]
 Type=0x065
 SubType=0x11
-String1=0x19,родник
+String1=0x19,джерело
 ExtendedLabels=N
 DayXpm="9 14 10 1"   Colormode=16
 "!	c #000000"
@@ -4514,7 +4514,7 @@ DayXpm="9 14 10 1"   Colormode=16
 [_point]
 Type=0x066
 SubType=0x01
-String1=0x19,пещера
+String1=0x19,печера
 ExtendedLabels=N
 DayXpm="16 9 4 1"   Colormode=16
 "!	c #000000"
@@ -4686,7 +4686,7 @@ DayXpm="11 18 8 1"   Colormode=32
 [_point]
 Type=0x115
 SubType=0x06
-String1=0x19,переход
+String1=0x19,перехід
 ExtendedLabels=N
 DayXpm="5 12 2 1"   Colormode=32
 "!	c #262626"  canalalpha=0
@@ -4710,7 +4710,7 @@ DayXpm="5 12 2 1"   Colormode=32
 [_point]
 Type=0x115
 SubType=0x07
-String1=0x19,лежачий полицейский
+String1=0x19,лежачий поліцейський
 ExtendedLabels=N
 DayXpm="11 9 8 1"   Colormode=16
 "!	c #000000"
@@ -4737,7 +4737,7 @@ DayXpm="11 9 8 1"   Colormode=16
 [_point]
 Type=0x115
 SubType=0x08
-String1=0x19,ж/д станция
+String1=0x19,з/д станция
 ExtendedLabels=Y
 FontStyle=Default
 CustomColor=Day
@@ -4769,7 +4769,7 @@ DayXpm="8 8 11 1"   Colormode=16
 [_point]
 Type=0x115
 SubType=0x0c
-String1=0x19,остров
+String1=0x19,острів
 ExtendedLabels=Y
 FontStyle=Default
 CustomColor=Day
@@ -4788,7 +4788,7 @@ DayXpm="5 5 1 1"   Colormode=32
 [_point]
 Type=0x115
 SubType=0x11
-String1=0x19,вышка ЛЭП
+String1=0x19,вишка ЛЕП
 ExtendedLabels=N
 DayXpm="7 7 2 1"   Colormode=32
 "!	c #000000"  canalalpha=0
@@ -4807,7 +4807,7 @@ DayXpm="7 7 2 1"   Colormode=32
 [_point]
 Type=0x115
 SubType=0x12
-String1=0x19,светофор
+String1=0x19,світлофор
 ExtendedLabels=N
 DayXpm="6 16 20 2"   Colormode=32
 "!!	c #000000"  canalalpha=15
@@ -4853,7 +4853,7 @@ DayXpm="6 16 20 2"   Colormode=32
 [_point]
 Type=0x115
 SubType=0x14
-String1=0x19,вход
+String1=0x19,вхід
 ExtendedLabels=N
 DayXpm="14 16 4 1"   Colormode=32
 "!	c #000000"  canalalpha=15
@@ -4883,7 +4883,7 @@ DayXpm="14 16 4 1"   Colormode=32
 [_point]
 Type=0x115
 SubType=0x15
-String1=0x19,выход
+String1=0x19,вихід
 ExtendedLabels=N
 DayXpm="14 16 7 1"   Colormode=16
 "!	c #000000"
@@ -4916,7 +4916,7 @@ DayXpm="14 16 7 1"   Colormode=16
 [_point]
 Type=0x115
 SubType=0x17
-String1=0x19,такси
+String1=0x19,таксі
 ExtendedLabels=N
 DayXpm="15 15 8 1"   Colormode=16
 "!	c #000000"
@@ -4949,7 +4949,7 @@ DayXpm="15 15 8 1"   Colormode=16
 [_point]
 Type=0x115
 SubType=0x18
-String1=0x19,мачта освещения
+String1=0x19,щогла освітлення
 ExtendedLabels=N
 DayXpm="10 10 3 1"   Colormode=16
 "!	c #FFFFFF"
@@ -4972,7 +4972,7 @@ DayXpm="10 10 3 1"   Colormode=16
 [_point]
 Type=0x115
 SubType=0x19
-String1=0x19,связь
+String1=0x19,зв'язок
 ExtendedLabels=N
 DayXpm="10 10 3 1"   Colormode=16
 "!	c #FFFFFF"
@@ -4995,7 +4995,7 @@ DayXpm="10 10 3 1"   Colormode=16
 [_point]
 Type=0x115
 SubType=0x1a
-String1=0x19,столб
+String1=0x19,стовп
 ExtendedLabels=N
 DayXpm="4 4 2 1"   Colormode=32
 "!	c #000000"  canalalpha=15
@@ -5068,7 +5068,7 @@ DayXpm="12 12 3 1"   Colormode=16
 [_point]
 Type=0x115
 SubType=0x1d
-String1=0x19,пик
+String1=0x19,пік
 ExtendedLabels=N
 DayXpm="11 12 10 1"   Colormode=16
 "!	c #FFFFFF"
@@ -6435,7 +6435,7 @@ DayXpm="32 32 34 2"   Colormode=16
 [_point]
 Type=0x117
 SubType=0x04
-String1=0x19,нефтегазовая вышка
+String1=0x19,нафтогазова вишка
 ExtendedLabels=N
 DayXpm="9 16 7 1"   Colormode=16
 "!	c #FFFFFF"

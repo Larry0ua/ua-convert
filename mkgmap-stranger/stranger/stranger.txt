@@ -1758,7 +1758,7 @@ BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #968CA3"
 "2 c #FFFFFF"
-String1=0x19,зл≥тна полоса
+String1=0x19,зл≥тна смуга
 ExtendedLabels=N
 [end]
 
@@ -2291,7 +2291,7 @@ Xpm="32 4 2  1"
 "!!!!!!!!########!!!!!!!!########"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
-String1=0x19,зал≥зна дорога
+String1=0x19,зал≥зниц€
 ExtendedLabels=N
 [end]
 
@@ -2358,7 +2358,7 @@ BorderWidth=0
 Xpm="0 0 2 0"
 "1 c #404040"
 "2 c #FFFFFF"
-String1=0x19,зал≥зна дорога
+String1=0x19,зал≥зниц€
 ExtendedLabels=N
 [end]
 

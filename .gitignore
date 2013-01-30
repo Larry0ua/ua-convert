@@ -4,3 +4,4 @@ executable/*
 mkgmap-stranger/_intermediate
 mkgmap-stranger/_split
 *.pbf
+toftp.bat

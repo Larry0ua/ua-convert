@@ -1,7 +1,7 @@
 cd mkgmap-stranger
 
-mkdir _intermediate >nul
-mkdir _split >nul
+mkdir _intermediate 2>nul
+mkdir _split 2>nul
 
 echo Splitting...
 java -Xmx1G -jar ..\executable\splitter\splitter.jar ..\UA.osm.pbf --output-dir=_split

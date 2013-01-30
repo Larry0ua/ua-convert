@@ -1,0 +1,6 @@
+results
+executable/*
+!executable/readme.txt
+mkgmap-stranger/_intermediate
+mkgmap-stranger/_split
+*.pbf

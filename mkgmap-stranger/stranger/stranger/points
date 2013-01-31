@@ -84,6 +84,22 @@ mkgmap:phone!=* & phone=* { set mkgmap:phone='${phone}' }
 
 mkgmap:is_in!=* & is_in=* { set mkgmap:is_in='${is_in}' }
 
+
+
+
+shop=convenience & opening_hours="24/7" | shop=kiosk & opening_hours="24/7" {name '${name} 24/7'} [0x2e03 resolution 20 default_name 'Магазин 24/7']
+shop=supermarket & opening_hours="24/7" {name '${name} 24 часа'} [0x2e02 resolution 20 default_name 'Cупермаркет 24/7']
+
+shop=convenience & opening_hours=* | shop=kiosk & opening_hours=* {name '${name} (${opening_hours})' | '${opening_hours}' | '' } [0x2e03 resolution 20]
+shop=supermarket & opening_hours=* {name '${name} (${opening_hours})' | '${opening_hours}' | '' } [0x2e02 resolution 20]
+
+shop=convenience | shop=kiosk [0x2e03 resolution 20 default_name 'Магазин']
+shop=supermarket [0x2e02 resolution 20 default_name 'Cупермаркет']
+
+opening_hours=* {name '${name} (${opening_hours})' | '${opening_hours}'}
+
+
+
 internet_access=yes { name 'Internet ${name}' | 'Internet' } [0x2f12 resolution 24 continue]
 internet_access=* & internet_access!=no & internet_access!=yes { name 'Internet(${internet_access}) ${name|def:}' } [0x2f12 resolution 24 continue]
 
@@ -91,7 +107,7 @@ internet_access=* & internet_access!=no & internet_access!=yes { name 'Internet(
 aeroway=airport {name '${name}, аеропорт' | 'аеропорт' } [0x2f04 resolution 16]
 aeroway=aerodrome {name '${name}, аеродром' | 'аеродром' } [0x2f04 resolution 16]
 aeroway=helipad {name '${name}, гелікоптерний майданчик' | 'гелікоптерний майданчик' } [0x5904 resolution 18]
-aeroway=terminal {name '${name}, терминал' | 'терминал' } [0x2f04 resolution 20]
+aeroway=terminal {name '${name}, термінал' | 'термінал' } [0x2f04 resolution 20]
 
 amenity=atm { name 'б-т ${operator}: ${name}' | 'б-т ${name}' | 'б-т ${operator}' | 'банкомат' } [0x2f06 resolution 21]
 amenity=bureau_de_change { name 'обмін валют: ${operator}: ${name}' | 'обмін валют: ${name}' | 'обмін валют: ${operator}' | 'обмін валют' } [0x2f06 resolution 21]
@@ -128,7 +144,7 @@ amenity=fast_food [0x2a07 resolution 21 default_name 'фастфуд']
 amenity=fire_station [0x3008 resolution 21 default_name 'пожежна станція']
 amenity=food_court [0x2a13 resolution 20]
 amenity=fuel & fuel:HGV_diesel=yes [ 0x2f16 resolution 19 ]
-amenity=fuel & shop=convenience { name '${operator}: ${name}' | '${name}' | '${operator}' | 'АЗС-магазин' } [ 0x2e06 resolution 19 ]
+amenity=fuel & shop=yes { name '${operator}: ${name}' | '${name}' | '${operator}' | 'АЗС-магазин' } [ 0x2e06 resolution 19 ]
 amenity=fuel { name '${operator}: ${name}' | '${name}' | '${operator}' | 'АЗС' } [0x2f01 resolution 19 ]
 amenity=grave_yard [0x6403 resolution 21]
 amenity=hospital [0x3002 resolution 20 default_name 'госпіталь']
@@ -171,7 +187,7 @@ amenity=restaurant & cuisine=thai [0x2a02 resolution 20]
 amenity=restaurant & cuisine=* [0x2a13 resolution 20]
 amenity=restaurant { name '${name}, ресторан (${phone})' |  '${name}, ресторан' | 'ресторан' } [0x2a00 resolution 20]
 amenity=school [0x2c05 resolution 20]
-amenity=shelter [0x2b05 resolution 20]
+amenity=shelter [0x4817 resolution 20]
 # amenity=supermarket is superceded by shop=supermarket
 amenity=supermarket [0x2e02 resolution 20]
 amenity=taxi [0x11517 resolution 24]
@@ -201,8 +217,8 @@ healthcare=* [0x3002 resolution 20]
 #  set all_refs = '${all_refs}, т:(${route_t_ref})'|'${all_refs}'
 #  set all_refs = '${all_refs}, м:(${route_m_ref})'|'${all_refs}'
 
-  set all_refs = 'а: ${route_a_ref}, т: ${route_t_ref}, м: ${route_m_ref}'|'а: ${route_a_ref}, т: ${route_t_ref}'| 'т: ${route_t_ref}, м: ${route_m_ref}'
-    |'а: ${route_a_ref}, м: ${route_m_ref}'|'а: ${route_a_ref}'|'т: ${route_t_ref}'|'м: ${route_m_ref}'
+  set all_refs = 'а:(${route_a_ref}), т:(${route_t_ref}), м:(${route_m_ref})'|'а:(${route_a_ref}), т:(${route_t_ref})'| 'т:(${route_t_ref}), м:(${route_m_ref})'
+	|'а:(${route_a_ref}), м:(${route_m_ref})'|'а:(${route_a_ref})'|'т:(${route_t_ref})'|'м:(${route_m_ref})'
 }
 
 (highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
@@ -278,9 +294,14 @@ natural=glacier [0x650a resolution 21]
 # используем вместо стандартных типов свой
 # natural=peak {name '${name|def:}${ele|height:m=>ft|def:}' } [0x6616 resolution 19]
 # natural=volcano {name '${name|def:} ${ele|def:}' } [0x2c0c resolution 21]
-natural=peak {name '${name|def:} ${ele|def:}' } [0x1151d resolution 20]
+
+#natural=peak {name '${name|def:} ${ele|def:}' } [0x1151d resolution 20]
+
+natural=peak & name=* {name '${name|def:} ${ele|def:}' } [0x1151d resolution 20]
+natural=peak {name '${name|def:} ${ele|def:}' } [0x6615 resolution 21]
+
 natural=volcano {name '${name|def:} ${ele|def:}' } [0x1151e resolution 19]
-mountain_pass=yes {name '${name} (${pass:category}, ${ele})' | '${name} (${pass:category})' | '${name} (${ele})' | '${name}' |  '(${ele})' | '(${pass:category})'} [0x1151c resolution 21]
+mountain_pass=yes {name '${name} (${pass:category}, ${ele})' | '${name} (${pass:category})' | '${name} (${ele})' | '${name}' |  '(${ele})' | '(${pass:category})'} [0x4818 resolution 21]
 natural=rock [0x6614 resolution 21]
 natural=spring [0x6511 resolution 21]
 natural=stream [0x6512 resolution 21]
@@ -316,10 +337,9 @@ shop=car_parts [0x2f07 resolution 20]
 shop=car_rental [0x2f02 resolution 20]
 shop=car_repair [0x2f03 resolution 20]
 shop=car_wrecker [0x2f0a resolution 20]
-shop=chemist [0x2e05 resolution 20 default_name 'парфюм']
+shop=chemist [0x2e05 resolution 20 default_name 'парфуми']
 shop=clothes [0x2e07 resolution 20]
 shop=computer [0x2e0b resolution 20 default_name 'комп`ютери']
-shop=convenience [0x2e02 resolution 20 default_name 'магазин']
 shop=department_store [0x2e01 resolution 19 default_name 'торговий центр']
 shop=doityourself [0x2e09 resolution 20 default_name 'хозтовари']
 shop=fashion [0x2e07 resolution 20]
@@ -332,7 +352,7 @@ shop=hairdresser [0x2f10 resolution 20 default_name 'перукарня']
 shop=mall [0x2e04 resolution 20 default_name 'торговий центр']
 shop=organic [0x2e0a resolution 20]
 shop=shoes [0x2e07 resolution 20 default_name 'взуття']
-shop=supermarket [0x2e02 resolution 20 default_name 'супермаркет']
+
 shop=outdoor [0x2e0d resolution 20 default_name 'спорядження']
 shop=tires [0x2f07 resolution 20]
 shop=tyres [0x2f07 resolution 20]
@@ -346,12 +366,12 @@ sport=skating [0x2d08 resolution 20]
 sport=skiing [0x2d06 resolution 20]
 sport=swimming [0x2d09 resolution 20]
 
-tourism=alpine_hut {name '${name} (${alt_name}) - ${description}, приют' | '${name} - ${description}, приют' | '${name} (${alt_name}), приют' | '${name}, приют' | 'приют' } [0x2b02 resolution 20]
+tourism=alpine_hut {name '${name} (${alt_name}) - ${description}, приют' | '${name} - ${description}, приют' | '${name} (${alt_name}), приют' | '${name}, приют' | 'приют' } [0x4815 resolution 20]
 tourism=attraction & historic=* [0x2c02 resolution 20]
 tourism=attraction [0x2c04 resolution 20]
 tourism=artwork [0x2c04 resolution 20]
 tourism=aquarium [0x2c07 resolution 20]
-tourism=camp_site {name '${name} (${alt_name}) - ${description}, кемпинг' | '${name} - ${description}, кемпинг' | '${name} (${alt_name}), кемпинг' | '${name}, кемпинг' | 'кемпинг' } [0x2b03 resolution 20]
+tourism=camp_site {name '${name} (${alt_name}) - ${description}, кемпінг' | '${name} - ${description}, кемпінг' | '${name} (${alt_name}), кемпінг' | '${name}, кемпінг' | 'кемпінг' } [0x4816 resolution 20]
 tourism=caravan_site [0x2b03 resolution 20]
 tourism=chalet { name '${name}' | '${ref}' } [0x2b02 resolution 20]
 tourism=guest_house [0x2b02 resolution 20]

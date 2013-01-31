@@ -153,7 +153,7 @@ junction=roundabout [0x06 road_class=0 road_speed=1 resolution 21]
 # Ways that may or may not be useable
 
 # Treat ways under construction as highway=path
-highway=construction | highway=* & construction=* {add access = no; add bicycle = no; add foot = yes; add mkgmap:dead-end-check = false } [0x16 road_class=0 road_speed=1 resolution 23]
+highway=construction | highway=proposed {add access = no; add bicycle = no; add foot = no; add vehicle = no; add mkgmap:dead-end-check = false } [0x16 road_class=0 road_speed=0 resolution 23]
 # Treat disused ways as highway=service, but at lower road_speed.
 highway=* & disused=yes [0x07 road_class=0 road_speed=1 resolution 22]
 
@@ -244,9 +244,10 @@ highway=residential [0x06 road_class=1 road_speed=2 resolution 21]
 (highway=minor | highway=unclassified | highway=road) & oneway=yes [0x137 resolution 23-24]
 (highway=minor | highway=unclassified | highway=road) & mkgmap:unpaved=1 [0x0f road_class=0 road_speed=2 resolution 24 continue]
 (highway=minor | highway=unclassified | highway=road) & mkgmap:unpaved=1 [0x147 resolution 21]
-highway=minor | highway=unclassified [0x07 road_class=1 road_speed=2 resolution 21]
-highway=road { add mkgmap:dead-end-check = false} [0x07 road_class=0 road_speed=1 resolution 21]
+highway=minor | highway=unclassified [0x23 road_class=1 road_speed=2 resolution 21]
+highway=road { add mkgmap:dead-end-check = false} [0x23 road_class=0 road_speed=1 resolution 21]
 
+highway=track & (tracktype=grade1 | tracktype=grade2) [0x0b road_class=0 road_speed=1 resolution 21]
 highway=track | highway=unsurfaced [0x0a road_class=0 road_speed=1 resolution 21]
 
 highway=pedestrian & (bridge=yes|tunnel=yes|mkgmap:unpaved=1) {add access = no; add foot = yes} [0x0f road_class=0 road_speed=0 resolution 24 continue]
@@ -271,28 +272,37 @@ highway=service & mkgmap:unpaved=1 [0x147  resolution 22]
 highway=service [0x07 road_class=0 road_speed=2 resolution 22]
 
 highway=byway [0x16 road_class=0 road_speed=0 resolution 23]
-highway=cycleway {add access = no; add bicycle = yes; add foot = yes} [0x16 road_class=0 road_speed=1 resolution 23]
+highway=cycleway {add access = no; add bicycle = yes; add foot = yes} [0x17 road_class=0 road_speed=2 resolution 23]
+
+highway=footway & bicycle:practical=yes | highway=path & bicycle:practical=yes {add access = no; add bicycle = yes; add foot = yes} [0x16 road_class=0 road_speed=1 resolution 23 default_name 'сycle=yes']
+
 highway=bridleway {add access = no; add bicycle = yes; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 23]
-(highway=footway | highway=path ) & bridge=yes {add access = no; add foot = yes} [0x0f road_class=0 road_speed=0 resolution 24 continue]
+(highway=footway | highway=path ) & bridge=yes {add access = no; add foot = yes} [0x0f road_class=0 road_speed=0 resolution 24  continue]
 (highway=footway | highway=path ) & bridge=yes {add access = no; add foot = yes} [0x37 resolution 24]
-highway=footway {add access = no; add foot = yes; add bicycle = no} [0x0d road_class=0 road_speed=0 resolution 24] 
+highway=footway & footway=sidewalk {add access = no; add foot = yes; add bicycle = no} [0x0d road_class=0 road_speed=0 resolution 23 default_name 'Тротуар']
+highway=footway & footway=crossing {add access = no; add foot = yes; add bicycle = no} [0x0d road_class=0 road_speed=0 resolution 23 default_name 'Переход']
+highway=footway {add access = no; add foot = yes} [0x0d road_class=0 road_speed=0 resolution 23] 
 man_made=pier {add access = no; add foot = yes; add bicycle = no} [0x0d road_class=0 road_speed=0 resolution 24 continue]
 highway=path {add access = no; add bicycle = yes; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 22]
-highway=steps {add access = no; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 24]
+highway=steps {add access = no; add foot = yes} [0x16 road_class=0 road_speed=0 resolution 23]
 
 
 # Mop up any unrecognised highway types
 highway=* [0x07 resolution 21]
 
-railway=abandoned [0x0f road_class=0 road_speed=0 resolution 24 default_name 'розібрана з/д' continue]
-railway=abandoned [0x1151e resolution 20 default_name 'розібрана з/д']
+railway=abandoned [0x0f road_class=0 road_speed=0 resolution 24 default_name 'розібрана залізниця' continue]
+railway=abandoned [0x1151e resolution 20 default_name 'розібрана залізниця']
+
+railway=construction [0x0f road_class=0 road_speed=0 resolution 24 default_name 'залізниця будується' continue]
+railway=construction [0x1151e resolution 20 default_name 'залізниця будується']
+
 railway=disused & !(layer<0) [0x1151d resolution 18-18 continue]
 railway=disused & !(layer<0) [0x1151c resolution 19-24]
 railway=light_rail & !(layer<0) [0x11514 resolution 19]
-railway=narrow_gauge & !(layer<0) [0x11519 resolution 19-19 default_name 'вузькоколійна з/д' continue]
-railway=narrow_gauge & !(layer<0) [0x1151f resolution 20-24 default_name 'вузькоколійна з/д']
-railway=rail & !(layer<0) & service=* [0x11519 resolution 19-19 default_name 'сервісна з/д' continue]
-railway=rail & !(layer<0) & service=* [0x1151f resolution 20-24 default_name 'сервісна з/д']
+railway=narrow_gauge & !(layer<0) [0x11519 resolution 19-19 default_name 'вузькоколійка' continue]
+railway=narrow_gauge & !(layer<0) [0x1151f resolution 20-24 default_name 'вузькоколійка']
+railway=rail & !(layer<0) & service=* [0x11519 resolution 19-19 default_name 'сервісна залізниця' continue]
+railway=rail & !(layer<0) & service=* [0x1151f resolution 20-24 default_name 'сервісна залізниця']
 railway=rail & !(layer<0) [0x11519 resolution 16-18 continue]
 railway=rail & !(layer<0) [0x11514 resolution 19-24]
 railway=subway & !(layer<0) [0x11514 resolution 20 continue]

@@ -15,7 +15,8 @@
 # if an element has the 'int_name' tag and the 'name' tag then name is
 # reset to be the value of the 'int_name' tag.
 
-name-tag-list = name, name:ru, name, name:en
+name-tag-list = name:ru, name, loc_name, int_name, name:en
+#old_name, 
 
 # The levels specification for this style
 # 

@@ -81,10 +81,10 @@ aeroway=aerodrome {name '${name}, аэродром' | 'аэродром' } [0x07
 aeroway=helipad {name '${name}, вертолётная площадка' | 'вертолётная площадка' } [0x0e resolution 20]
 
 amenity=kindergarten & building=* [0x25 resolution 24]
-amenity=kindergarten [0x26 resolution 21]
+amenity=kindergarten [0x26 resolution 22]
 amenity=cafe | amenity=fast_food | amenity=restaurant | amenity=food_court [0x08 resolution 22]
 ( amenity=college | amenity=school | amenity=university ) & building=* [0x0a resolution 24]
-amenity=college | amenity=school | amenity=university [0x24 resolution 21]
+amenity=college | amenity=school | amenity=university [0x24 resolution 22]
 amenity=grave_yard [0x1a resolution 19]
 ( amenity=hospital | amenity=doctors ) & building=* [0x0b resolution 24]
 amenity=hospital | amenity=doctors [0x21 resolution 21]

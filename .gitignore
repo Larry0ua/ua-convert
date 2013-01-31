@@ -6,6 +6,7 @@ mkgmap-stranger/_split
 mkgmap-stranger/stranger/stranger.typ
 navitel/maps
 navitel/extracts
+navitel/Log.txt
 *.pbf
 *.o5m
 toftp.bat

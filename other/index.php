@@ -18,9 +18,11 @@ function print_garmin() {
 function print_navitel() {
 	$fp = fopen("regions.csv", "r");
 	echo "Конвертація в формат Navitel NM2<br>";
-	while (($data = fgetcsv($fp, 1000, ",")) !== FALSE) {
-		if (file_exists("Navitel-${data[0]}.zip"))
-			echo $data[2] ." ". file_link_n_details("Navitel-${data[0]}.zip") . "<br>";
+	while (($str = fgets($fp, 1000)) !== FALSE) {
+		$data = explode(',', $str);
+		if (file_exists("Navitel-${data[0]}.zip")) {
+			echo $data[2] ." ". file_link_n_details("Navitel-${data[0]}.zip") . "<br>"; 
+		}
 	}
 	//	if (!$lst) { echo "Нема доступних файлів конвертації в формат Navitel<br>"; return; }
 

@@ -1,4 +1,3 @@
-cd mkgmap-stranger
 
 mkdir _intermediate 2>nul
 mkdir _split 2>nul
@@ -16,4 +15,3 @@ echo Removing intermediate files...
 rem del /Q _intermediate
 rem del /Q _split
 
-cd ..

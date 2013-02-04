@@ -1,6 +1,9 @@
 results
 executable/*
 !executable/readme.txt
+!executable/offset/
+executable/offset/offset.exe
+executable/offset/*.poly
 mkgmap-stranger/_intermediate
 mkgmap-stranger/_split
 mkgmap-stranger/stranger/stranger.typ

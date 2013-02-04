@@ -172,7 +172,7 @@ highway=motorway_link & (bridge=yes|tunnel=yes|mkgmap:unpaved=1) {add oneway=yes
 highway=motorway & mkgmap:unpaved=1 {add oneway=yes; add bicycle=no; add foot=no } [0x0f road_class=4 road_speed=6 resolution 24 continue]
 (highway=motorway | highway=motorway_link) & bridge=yes [0x31 resolution 16]
 (highway=motorway | highway=motorway_link) & tunnel=yes [0x11605 resolution 16]
-(highway=motorway | highway=motorway_link) & mkgmap:unpaved=1 [0x141 resolution 16]
+# (highway=motorway | highway=motorway_link) & mkgmap:unpaved=1 [0x141 resolution 16]
 highway=motorway {add oneway=yes; add bicycle=no; add foot=no } [0x01 road_class=4 road_speed=7 resolution 16]
 highway=motorway_link {add oneway=yes; add bicycle=no; add foot=no } [0x01 road_class=3 road_speed=2 resolution 20]
 highway=* & motorroad=yes {add bicycle=no; add foot=no}
@@ -185,7 +185,7 @@ highway=trunk & mkgmap:unpaved=1 [0x0f road_class=4 road_speed=4 resolution 24 c
 (highway=trunk | highway=trunk_link) & tunnel=yes [0x11605 resolution 16]
 (highway=trunk | highway=trunk_link) & oneway=yes [0x10202 resolution 16-22 continue]
 (highway=trunk | highway=trunk_link) & oneway=yes [0x132 resolution 23-24]
-(highway=trunk | highway=trunk_link) & mkgmap:unpaved=1 [0x142 resolution 16]
+# (highway=trunk | highway=trunk_link) & mkgmap:unpaved=1 [0x142 resolution 16]
 highway=trunk [0x02 road_class=4 road_speed=5 resolution 16]
 highway=trunk_link [0x02 road_class=3 road_speed=2 resolution 20]
 highway=* & motorroad=yes [0x02 road_class=4 road_speed=4 resolution 16]
@@ -198,7 +198,7 @@ highway=primary & mkgmap:unpaved=1 [0x0f road_class=3 road_speed=3 resolution 24
 (highway=primary | highway=primary_link) & tunnel=yes [0x11605 resolution 18]
 (highway=primary | highway=primary_link) & oneway=yes [0x10203 resolution 18-22 continue]
 (highway=primary | highway=primary_link) & oneway=yes [0x133 resolution 23-24]
-(highway=primary | highway=primary_link) & mkgmap:unpaved=1 [0x143 resolution 18]
+# (highway=primary | highway=primary_link) & mkgmap:unpaved=1 [0x143 resolution 18]
 highway=primary [0x03 road_class=3 road_speed=4 resolution 18]
 highway=primary_link [0x03 road_class=3 road_speed=1 resolution 20]
 
@@ -209,8 +209,8 @@ highway=secondary & mkgmap:unpaved=1 [0x0f road_class=2 road_speed=2 resolution 
 (highway=secondary | highway=secondary_link) & bridge=yes [0x34 resolution 19]
 (highway=secondary | highway=secondary_link) & tunnel=yes [0x11606 resolution 19]
 (highway=secondary | highway=secondary_link) & oneway=yes [0x10204 resolution 19-22 continue]
-(highway=secondary | highway=secondary_link) & oneway=yes [0x134 resolution 23-24]
-(highway=secondary | highway=secondary_link) & mkgmap:unpaved=1 [0x144 resolution 19]
+(highway=secondary | highway=secondary_link) & oneway=yes [0x134 resolution 23-24 continue]
+# (highway=secondary | highway=secondary_link) & mkgmap:unpaved=1 [0x144 resolution 19]
 highway=secondary [0x04 road_class=2 road_speed=3 resolution 19]
 highway=secondary_link [0x04 road_class=2 road_speed=1 resolution 21]
 
@@ -222,7 +222,7 @@ highway=tertiary & mkgmap:unpaved=1 [0x0f road_class=1 road_speed=2 resolution 2
 (highway=tertiary | highway=tertiary_link) & tunnel=yes [0x11606 resolution 20]
 (highway=tertiary | highway=tertiary_link) & oneway=yes [0x10205 resolution 20-22 continue]
 (highway=tertiary | highway=tertiary_link) & oneway=yes [0x135 resolution 23-24]
-(highway=tertiary | highway=tertiary_link) & mkgmap:unpaved=1 [0x145 resolution 20]
+# (highway=tertiary | highway=tertiary_link) & mkgmap:unpaved=1 [0x145 resolution 20]
 highway=tertiary [0x05 road_class=1 road_speed=3 resolution 20]
 highway=tertiary_link [0x05 road_class=1 road_speed=1 resolution 21]
 

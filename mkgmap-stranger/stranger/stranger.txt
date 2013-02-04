@@ -19,7 +19,7 @@
 
 [_id]
 ProductCode=1
-FID=43;
+FID=43
 [end]
 
 ; NT1 header part:
@@ -1753,7 +1753,6 @@ String1=0x19,державний кордон
 ; additional block with colors:
 ; 00000000  0A 00 00 C0                                        ....
 ; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
->>>>>>> ru-style-translation
 [end]
 
 [_line]
@@ -2743,7 +2742,6 @@ String1=0x19,місто
 ; additional block with colors:
 ; 00000000  03                                                 .
 ; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
->>>>>>> ru-style-translation
 [end]
 
 [_point]
@@ -4851,7 +4849,7 @@ XPM="9 14 10 2",
 "555555444444555555"
 };
 String1=0x19,питна вода
-end]
+[end]
 
 [_point]
 ; Originally @(0x001b82+0x002443)=0x003fc5
@@ -5129,7 +5127,6 @@ XPM="11 9 8 2",
 "3322222222222222222233"
 };
 String1=0x19,лежачий поліцейський
->>>>>>> ru-style-translation
 [end]
 
 [_point]

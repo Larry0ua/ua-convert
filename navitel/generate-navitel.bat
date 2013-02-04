@@ -1,7 +1,3 @@
-
-mkdir extracts 2>nul
-mkdir maps 2>nul
-
 for /F "tokens=1,2,3 delims=," %%A in (..\other\regions.csv) Do (
  rem %%A - region code
  rem %%B - relation ID
@@ -12,3 +8,4 @@ for /F "tokens=1,2,3 delims=," %%A in (..\other\regions.csv) Do (
 )
 if exist maps ConvertToNM2.vbs
 
+copy maps\*.nm2 ..\results\

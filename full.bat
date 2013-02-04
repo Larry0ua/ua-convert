@@ -1,7 +1,18 @@
-mkdir results >nul
-del /Q results\*.*
+mkdir results 2>nul
+mkdir navitel\extracts 2>nul
+mkdir navitel\maps 2>nul
+mkdir mkgmap-stranger\_intermediate 2>nul
+mkdir mkgmap-stranger\_split 2>nul
 
-executable\wget -N http://data.gis-lab.info/osm_dump/dump/latest/UA.osm.pbf 
+
+del /Q results\*.*
+del /Q navitel\extracts\*.*
+del /Q navitel\maps\*.*
+del /Q mkgmap-stranger\_intermediate\*.*
+del /Q mkgmap-stranger\_split\*.*
+
+
+executable\wget -N http://data.gis-lab.info/osm_dump/dump/latest/UA.osm.pbf
 
 cd mkgmap-stranger
 call run-stranger.bat

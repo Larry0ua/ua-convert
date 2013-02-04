@@ -1,4 +1,4 @@
-// compile with: gcc.exe offset.cpp clipper.cpp -o offset.exe -lstdc++
+// compile with: g++.exe offset.cpp clipper.cpp -o offset.exe -static-libgcc -static-libstdc++
 #include <cmath>
 #include <ctime>
 #include <cstdlib>

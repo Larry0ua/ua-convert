@@ -22,4 +22,7 @@ cd navitel
 call generate-navitel.bat
 cd ..
 
+rem package each file into archive
+call package.bat
+
 rem call toftp.bat

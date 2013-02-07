@@ -47,11 +47,14 @@ For Each pFile In pMapsFolder.Files
 	Dim strExt
 	strExt = LCase (fso.GetExtensionName (pFile.Path))
 	If strExt = "img" Or strExt = "ntm" Or strExt = "rus" Or strExt = "mp" Then
-		a.Open pFile.Path, False
-
 		Dim strOutFile
 		strOutFile = fso.GetParentFolderName(pFile.Path) + "\" + fso.GetBaseName (pFile.Path) + ".nm2"
-		a.SaveAs strOutFile, "navitel-nm2"
+
+		If Not fso.FileExists (strOutFile) Then
+			a.Open pFile.Path, False
+
+			a.SaveAs strOutFile, "navitel-nm2"
+		End If
 	End if
 
 	log.WriteLine strOutFile

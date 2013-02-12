@@ -126,7 +126,7 @@ landuse=wood & name=* [0x6618 resolution 21]
 
 healthcare=* [0x3002 resolution 20]
 
-(highway=bus_stop | railway=tram_stop)
+(highway=bus_stop | railway=tram_stop | public_transport=platform)
 {
 #  set all_refs = '${all_refs}, а:(${route_a_ref})'|'${all_refs}'
 #  set all_refs = '${all_refs}, т:(${route_t_ref})'|'${all_refs}'
@@ -136,32 +136,32 @@ healthcare=* [0x3002 resolution 20]
 	|'а:(${route_a_ref}), м:(${route_m_ref})'|'а:(${route_a_ref})'|'т:(${route_t_ref})'|'м:(${route_m_ref})'
 }
 
-(highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
+(highway=bus_stop | railway=tram_stop | public_transport=platform | railway=halt | railway=station)
 & lit=yes & (shelter=yes | covered=yes)
 {
   set ref='${ref|def:} ${all_refs}';
   name '${name|def:} ${ref|def:}*${operator|def:}';
 }
-(highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
+(highway=bus_stop | railway=tram_stop | public_transport=platform | railway=halt | railway=station)
 & (shelter=yes | covered=yes)
 {
   set ref='${ref|def:} ${all_refs}';
   name '${name|def:} ${ref|def:}+${operator|def:}';
 }
-(highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
+(highway=bus_stop | railway=tram_stop | public_transport=platform | railway=halt | railway=station)
 & (shelter=no | covered=no)
 {
   set ref='${ref|def:} ${all_refs}';
   name '${name|def:} ${ref|def:}-${operator|def:}';
 }
-(highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
+(highway=bus_stop | railway=tram_stop | public_transport=platform | railway=halt | railway=station)
 & (name=*|ref=*|operator=*|route_ref=*)
 {
   set ref='${ref|def:} ${all_refs}';
   name '${name|def:} ${ref|def:} ${operator|def:}';
 }
 
-highway=bus_stop [0x2f17 resolution 20 default_name 'остановка']
+(highway=bus_stop | public_transport=platform) [0x2f17 resolution 20 default_name 'остановка']
 
 highway=motorway_junction { name '${ref} ${name}' | '${ref}' | '${name}' }
 highway=motorway_junction [0x2000 resolution 20]

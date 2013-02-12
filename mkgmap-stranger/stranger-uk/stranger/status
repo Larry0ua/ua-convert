@@ -1,44 +1,44 @@
 # сокращаем статусные части названий улиц и задвигаем их взад
 
-highway=* & name ~ '.*(улица).*' {name '${name|subst:улица=>} ул.'}
-highway=* & name ~ '.*(переулок).*' {name '${name|subst:переулок=>} пер.'}
+highway=* & name ~ '.*(вулиця).*' {name '${name|subst:вулиця=>} вул.'}
+highway=* & name ~ '.*(провулок).*' {name '${name|subst:провулок=>} пров.'}
 highway=* & name ~ '.*(проспект).*' {name '${name|subst:проспект=>} пр.'}
-highway=* & name ~ '.*(проезд).*' {name '${name|subst:проезд=>} пр-д'}
-highway=* & name ~ '.*(разъезд).*' {name '${name|subst:разъезд=>} раз.'}
+highway=* & name ~ '.*(проїзд).*' {name '${name|subst:проїзд=>} пр-д'}
+highway=* & name ~ ".*(роз'їзд).*" {name "${name|subst:роз'їзд=>} роз."}
 highway=* & name ~ '.*(тракт).*' {name '${name|subst:тракт=>} тр-т'}
-highway=* & name ~ '.*(площадь).*' {name '${name|subst:площадь=>} пл.'}
+highway=* & name ~ '.*(площа).*' {name '${name|subst:площа=>} пл.'}
 highway=* & name ~ '.*(бульвар).*' {name '${name|subst:бульвар=>} бул.'}
 highway=* & name ~ '.*(дорога).*' {name '${name|subst:дорога=>} дор.'}
 highway=* & name ~ '.*(тупик).*' {name '${name|subst:тупик=>} т.'}
-highway=* & name ~ '.*(микрорайон).*' {name '${name|subst:микрорайон=>} мкр.'}
-highway=* & name ~ '.*(аллея).*' {name '${name|subst:аллея=>} ал.'}
-highway=* & name ~ '.*(линия).*' {name '${name|subst:линия=>} лин.'}
-highway=* & name ~ '.*(набережная).*' {name '${name|subst:набережная=>} наб.'}
-highway=* & name ~ '.*(шоссе).*' {name '${name|subst:шоссе=>} шоссе'}
+highway=* & name ~ '.*(мікрорайон).*' {name '${name|subst:мікрорайон=>} мкр.'}
+highway=* & name ~ '.*(алея).*' {name '${name|subst:алея=>} ал.'}
+highway=* & name ~ '.*(лінія).*' {name '${name|subst:лінія=>} лін.'}
+highway=* & name ~ '.*(набережна).*' {name '${name|subst:набережна=>} наб.'}
+highway=* & name ~ '.*(шосе).*' {name '${name|subst:шосе=>} шосе'}
 highway=* & name ~ '.*(зимник).*' {name '${name|subst:зимник=>} зим.'}
 
-name=* { name '${name|subst:микрорайон=> мкр.
+name=* { name "${name|subst:мікрорайон=> мкр.
             |subst:район=> р-н
-            |subst:разъезд=> раз.
-            |subst:имени=> им.
+            |subst:роз'їзд=> роз.
+            |subst:імені=> ім.
             |subst:урочище=> ур.
             |subst:слобода=> сл.
-            }' }
+            }" }
 
-addr:street ~ '.*(улица).*' {set addr:street='${addr:street|subst:улица=>} ул.'}
-addr:street ~ '.*(переулок).*' {set addr:street='${addr:street|subst:переулок=>} пер.'}
-addr:street ~ '.*(проспект).*' {set addr:street='${addr:street|subst:проспект=>} пр.'}
-addr:street ~ '.*(проезд).*' {set addr:street='${addr:street|subst:проезд=>} пр-д'}
-addr:street ~ '.*(разъезд).*' {set addr:street='${addr:street|subst:разъезд=>} раз.'}
-addr:street ~ '.*(тракт).*' {set addr:street='${addr:street|subst:тракт=>} тр-т'}
-addr:street ~ '.*(площадь).*' {set addr:street='${addr:street|subst:площадь=>} пл.'}
-addr:street ~ '.*(бульвар).*' {set addr:street='${addr:street|subst:бульвар=>} бул.'}
-addr:street ~ '.*(дорога).*' {set addr:street='${addr:street|subst:дорога=>} дор.'}
-addr:street ~ '.*(тупик).*' {set addr:street='${addr:street|subst:тупик=>} т.'}
-addr:street ~ '.*(микрорайон).*' {set addr:street='${addr:street|subst:микрорайон=>} мкр.'}
-addr:street ~ '.*(аллея).*' {set addr:street='${addr:street|subst:аллея=>} ал.'}
-addr:street ~ '.*(линия).*' {set addr:street='${addr:street|subst:линия=>} лин.'}
-addr:street ~ '.*(набережная).*' {set addr:street='${addr:street|subst:набережная=>} наб.'}
-addr:street ~ '.*(шоссе).*' {set addr:street='${addr:street|subst:шоссе=>} шоссе'}
-addr:street ~ '.*(зимник).*' {set addr:street='${addr:street|subst:зимник=>} зим.'}
+addr:street ~ '.*(вулиця).*' {name '${name|subst:вулиця=>} вул.'}        
+addr:street ~ '.*(провулок).*' {name '${name|subst:провулок=>} пров.'}   
+addr:street ~ '.*(проспект).*' {name '${name|subst:проспект=>} пр.'}     
+addr:street ~ '.*(проїзд).*' {name '${name|subst:проїзд=>} пр-д'}        
+addr:street ~ ".*(роз'їзд).*" {name "${name|subst:роз'їзд=>} роз."}    
+addr:street ~ '.*(тракт).*' {name '${name|subst:тракт=>} тр-т'}          
+addr:street ~ '.*(площа).*' {name '${name|subst:площа=>} пл.'}           
+addr:street ~ '.*(бульвар).*' {name '${name|subst:бульвар=>} бул.'}      
+addr:street ~ '.*(дорога).*' {name '${name|subst:дорога=>} дор.'}        
+addr:street ~ '.*(тупик).*' {name '${name|subst:тупик=>} т.'}            
+addr:street ~ '.*(мікрорайон).*' {name '${name|subst:мікрорайон=>} мкр.'}
+addr:street ~ '.*(алея).*' {name '${name|subst:алея=>} ал.'}             
+addr:street ~ '.*(лінія).*' {name '${name|subst:лінія=>} лін.'}          
+addr:street ~ '.*(набережна).*' {name '${name|subst:набережна=>} наб.'}  
+addr:street ~ '.*(шосе).*' {name '${name|subst:шосе=>} шосе'}            
+addr:street ~ '.*(зимник).*' {name '${name|subst:зимник=>} зим.'}        
 

@@ -90,3 +90,5 @@ type=route & route=share_taxi & ref=*
     delete mkgmap:ref;
   }
 }
+
+(type=associatedStreet | type=street) { apply { add addr:street='${name}' } }

@@ -1,0 +1,13 @@
+#
+#
+#
+
+# удаляем
+
+bridge=no | bridge=0   {delete highway; delete rail; delete bridge;}
+building=no | building=0 {delete building;}
+
+# исправляем 
+
+bridge=true | bridge=1 {set bridge=yes}
+building=true | building=1 {set building=yes}

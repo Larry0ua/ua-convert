@@ -1,0 +1,44 @@
+# сокращаем статусные части названий улиц и задвигаем их взад
+
+highway=* & name ~ '.*(улица).*' {name '${name|subst:улица=>} ул.'}
+highway=* & name ~ '.*(переулок).*' {name '${name|subst:переулок=>} пер.'}
+highway=* & name ~ '.*(проспект).*' {name '${name|subst:проспект=>} пр.'}
+highway=* & name ~ '.*(проезд).*' {name '${name|subst:проезд=>} пр-д'}
+highway=* & name ~ '.*(разъезд).*' {name '${name|subst:разъезд=>} раз.'}
+highway=* & name ~ '.*(тракт).*' {name '${name|subst:тракт=>} тр-т'}
+highway=* & name ~ '.*(площадь).*' {name '${name|subst:площадь=>} пл.'}
+highway=* & name ~ '.*(бульвар).*' {name '${name|subst:бульвар=>} бул.'}
+highway=* & name ~ '.*(дорога).*' {name '${name|subst:дорога=>} дор.'}
+highway=* & name ~ '.*(тупик).*' {name '${name|subst:тупик=>} т.'}
+highway=* & name ~ '.*(микрорайон).*' {name '${name|subst:микрорайон=>} мкр.'}
+highway=* & name ~ '.*(аллея).*' {name '${name|subst:аллея=>} ал.'}
+highway=* & name ~ '.*(линия).*' {name '${name|subst:линия=>} лин.'}
+highway=* & name ~ '.*(набережная).*' {name '${name|subst:набережная=>} наб.'}
+highway=* & name ~ '.*(шоссе).*' {name '${name|subst:шоссе=>} шоссе'}
+highway=* & name ~ '.*(зимник).*' {name '${name|subst:зимник=>} зим.'}
+
+name=* { name '${name|subst:микрорайон=> мкр.
+            |subst:район=> р-н
+            |subst:разъезд=> раз.
+            |subst:имени=> им.
+            |subst:урочище=> ур.
+            |subst:слобода=> сл.
+            }' }
+
+addr:street ~ '.*(улица).*' {set addr:street='${addr:street|subst:улица=>} ул.'}
+addr:street ~ '.*(переулок).*' {set addr:street='${addr:street|subst:переулок=>} пер.'}
+addr:street ~ '.*(проспект).*' {set addr:street='${addr:street|subst:проспект=>} пр.'}
+addr:street ~ '.*(проезд).*' {set addr:street='${addr:street|subst:проезд=>} пр-д'}
+addr:street ~ '.*(разъезд).*' {set addr:street='${addr:street|subst:разъезд=>} раз.'}
+addr:street ~ '.*(тракт).*' {set addr:street='${addr:street|subst:тракт=>} тр-т'}
+addr:street ~ '.*(площадь).*' {set addr:street='${addr:street|subst:площадь=>} пл.'}
+addr:street ~ '.*(бульвар).*' {set addr:street='${addr:street|subst:бульвар=>} бул.'}
+addr:street ~ '.*(дорога).*' {set addr:street='${addr:street|subst:дорога=>} дор.'}
+addr:street ~ '.*(тупик).*' {set addr:street='${addr:street|subst:тупик=>} т.'}
+addr:street ~ '.*(микрорайон).*' {set addr:street='${addr:street|subst:микрорайон=>} мкр.'}
+addr:street ~ '.*(аллея).*' {set addr:street='${addr:street|subst:аллея=>} ал.'}
+addr:street ~ '.*(линия).*' {set addr:street='${addr:street|subst:линия=>} лин.'}
+addr:street ~ '.*(набережная).*' {set addr:street='${addr:street|subst:набережная=>} наб.'}
+addr:street ~ '.*(шоссе).*' {set addr:street='${addr:street|subst:шоссе=>} шоссе'}
+addr:street ~ '.*(зимник).*' {set addr:street='${addr:street|subst:зимник=>} зим.'}
+

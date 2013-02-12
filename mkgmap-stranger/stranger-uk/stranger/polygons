@@ -1,0 +1,159 @@
+# -------------------------------------------------------------------
+# This is the default mkgmap style file for converting closed OSM ways
+# into Garmin polygons.
+# Any line prefaced with # is a comment and will not be applied.
+# Each line is a rule, of the generalised format:
+#  OSM_tag(s)_to_match  [Garmin_type_code resolution]
+# See http://wiki.openstreetmap.org/wiki/Mkgmap/help/style_rules
+# and http://wiki.openstreetmap.org/wiki/Mkgmap/help/Custom_styles
+# for more information.
+
+include 'trueyes';
+include 'status';
+include 'address';
+
+aeroway=airport {name '${name}, аэропорт' | 'аэропорт' } [0x07 resolution 16]
+aeroway=aerodrome {name '${name}, аэродром' | 'аэродром' } [0x07 resolution 16]
+aeroway=helipad {name '${name}, вертолётная площадка' | 'вертолётная площадка' } [0x0e resolution 20]
+
+amenity=kindergarten & building=* [0x25 resolution 24]
+amenity=kindergarten [0x26 resolution 21]
+amenity=cafe | amenity=fast_food | amenity=restaurant | amenity=food_court [0x08 resolution 22]
+( amenity=college | amenity=school | amenity=university ) & building=* [0x0a resolution 24]
+amenity=college | amenity=school | amenity=university [0x24 resolution 21]
+amenity=grave_yard [0x1a resolution 19]
+( amenity=hospital | amenity=doctors ) & building=* [0x0b resolution 24]
+amenity=hospital | amenity=doctors [0x21 resolution 21]
+amenity=nursing_home [0x0b resolution 22]
+parking=underground | parking=multi-storey [0x06 resolution 21]
+amenity=parking | parking=surface [0x05 resolution 21]
+amenity=prison [0x04 resolution 20]
+# amenity=supermarket is superceded by shop=supermarket or landuse=retail
+amenity=supermarket [0x08 resolution 22]
+amenity=marketplace [0x2a resolution 20]
+amenity=fire_station & building=yes [0x13 resolution 24]
+amenity=fire_station [0x0c resolution 21]
+
+healthcare=* [0x0b resolution 21]
+
+landuse=allotments [0x4e resolution 20]
+landuse=basin [0x3f resolution 18]
+landuse=cemetary [0x1a resolution 18]
+landuse=cemetery [0x1a resolution 18]
+landuse=commercial [0x0c resolution 18]
+landuse=construction [0x10f01 resolution 20]
+landuse=farm | landuse=farmland [0x2b resolution 18]
+landuse=farmyard [0x4e resolution 18]
+landuse=greenfield [0x11517 resolution 18]
+landuse=industrial | landuse=peat_cutting [0x0c resolution 18]
+landuse=meadow | natural=grassland | natural=grass [0x11517 resolution 18]
+landuse=military | landuse=restricted [0x04 resolution 18]
+landuse=quarry [0x1d resolution 18]
+landuse=recreation_ground [0x17 resolution 18]
+landuse=reservoir [0x3f resolution 18]
+# on resolution 24, display building=* instead of landuse=residential
+landuse=residential & place!=locality & place!=hamlet & place!=village [0x02 resolution 17]
+landuse=retail [0x2a resolution 20]
+landuse=village_green [0x17 resolution 20]
+landuse=vineyard [0x1151f resolution 19]
+landuse=orchard [0x11601 resolution 19]
+landuse=garages [0x22 resolution 19]
+landuse=railway [0x23 resolution 19]
+landuse=ice_rink [0x2c resolution 20]
+landuse=grass [0x30 resolution 20]
+landuse=plant_nursery [0x11602 resolution 20]
+landuse=salt_pond [0x11603 resolution 19]
+
+# удаляем из обработки линий полигоны дорог. 
+# данный блок полностью дублируется в lines и polygons
+# потому что полигоны дорог могут быть как way так и multypolygon
+# при этом блок lines обрабатывается первым и необходимо исключить их из роутинга
+highway=residential & area=yes {set area:highway=residential; delete highway;}
+highway=service & area=yes {set area:highway=service; delete highway;}
+highway=footway & area=yes {set area:highway=footway; delete highway;}
+highway=pedestrian & area=yes {set area:highway=pedestrian; delete highway;}
+highway=path & area=yes {set area:highway=path; delete highway;}
+highway=platform & area=yes {set area:highway=platform; delete highway;}
+
+
+area:highway=motorway | area:highway=trunk | area:highway=secondary [0x2e resolution 19]
+area:highway=primary [0x2e resolution 19]
+area:highway=tertiary [0x2e resolution 19]
+area:highway=service [0x2e resolution 19]
+area:highway=pedestrian [0x2d resolution 19]
+area:highway=residential [0x11607 resolution 19]
+area:highway=footway [0x2d resolution 19]
+man_made=pier [0x1151c resolution 20]
+area:highway=platform [0x23 resolution 20]
+railway=platform [0x23 resolution 20]
+#area:highway=* [0x2e resolution 21]
+
+leisure=pitch & sport=hockey | leisure=pitch & sport=skating [0x2c resolution 20]
+leisure=common [0x2d resolution 20]
+leisure=garden [0x17 resolution 20]
+leisure=golf_course [0x18 resolution 20]
+leisure=ice_rink [0x19 resolution 21]
+leisure=marina [0x09 resolution 20]
+leisure=nature_reserve [0x16 resolution 16]
+leisure=park [0x17 resolution 20]
+#leisure=pitch { name '${name} (${sport})' | '${name}' } [0x19 resolution 20]
+leisure=pitch [0x19 resolution 20]
+leisure=playground [0x17 resolution 20]
+leisure=recreation_ground [0x19 resolution 18]
+#leisure=sports_center | leisure=sports_centre { name '${name} (${sport})' | '${name}' } [0x19 resolution 20]
+( leisure=sports_center | leisure=sports_centre ) & building=yes [0x1151a resolution 20]
+leisure=sports_center | leisure=sports_centre [0x19 resolution 20]
+leisure=stadium { name '${name} (${sport})' | '${name}' } [0x19 resolution 19]
+leisure=track { name '${name} (${sport})' | '${name}' } [0x19 resolution 18]
+leisure=water_park [0x09 resolution 18]
+
+military=airfield [0x04 resolution 18]
+military=barracks [0x04 resolution 18]
+military=danger_area [0x04 resolution 18]
+military=range [0x04 resolution 18]
+
+natural=glacier [0x4d resolution 16]
+natural=marsh [0x51 resolution 18]
+natural=mud [0x51 resolution 18 continue]
+natural=wetland & wetland!=tidalflat [0x51 resolution 18 continue]
+water=tidal | wetland=tidalflat | tidal=yes [0x1151b resolution 19 continue]
+natural=scrub [0x4f resolution 19]
+natural=water [0x3c resolution 16]
+natural=waterfall | waterway=waterfall [0x47 resolution 21]
+natural=sea | natural=bay [0x32 resolution 10 continue]
+
+landuse=forest | natural=wood | landuse=wood [0x50 resolution 18-18 continue]
+
+wood=coniferous [0x11604 resolution 19]
+wood=deciduous [0x11605 resolution 19]
+wood=mixed [0x11606 resolution 19]
+
+landuse=forest | natural=wood | landuse=wood [0x50 resolution 19]
+
+natural=beach | natural=sand [0x11519 resolution 19]
+natural=heath [0x11518 resolution 19]
+natural=fell [0x1151d resolution 19]
+
+place=village | place=hamlet | place=locality [0x03 resolution 18]
+place=island & name=* [0x53 resolution 18]
+place=islet & name=* [0x53 resolution 20]
+
+building=yes & shop=* [0x08 resolution 21]
+shop=* [0x2a resolution 21]
+
+(waterway=rapids | rapids=yes) & area=yes {name '${name|def:} ${width|def:}' } [0x1151e resolution 19 continue]
+waterway=riverbank [0x46 resolution 16]
+
+historic=museum | historic=memorial [0x1e resolution 20]
+historic=archaeological_site | historic=ruins [0x1e resolution 21]
+
+power=station | power=sub_station [0x1b resolution 19]
+man_made=dyke [0x1c resolution 20]
+
+
+# building tag should be last
+building=garage | building=garages [0x27 resolution 24]
+building=shelter [0x2f resolution 24]
+building=* { name '${addr:housenumber} (${name}, ${name:full})' | '${addr:housenumber} (${name})' | '${name} (${name:full})' | '${name}' | '${name:full}' | '${addr:housenumber}' } [0x13 resolution 24]
+tourism=* [0x17 resolution 21]
+man_made=* | amenity=* [0x13 resolution 24]

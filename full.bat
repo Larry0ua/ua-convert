@@ -12,7 +12,7 @@ del /Q mkgmap-stranger\_intermediate\*.*
 del /Q mkgmap-stranger\_split\*.*
 
 
-executable\wget -N http://data.gis-lab.info/osm_dump/dump/latest/UA.osm.pbf
+rem executable\wget -N http://data.gis-lab.info/osm_dump/dump/latest/UA.osm.pbf
 
 cd mkgmap-stranger
 call run-stranger.bat

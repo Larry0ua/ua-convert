@@ -25,6 +25,13 @@ name=* { name '${name|subst:микрорайон=> мкр.
             |subst:слобода=> сл.
             }' }
 
+mkgmap:admin_level4=* { set mkgmap:admin_level4='${mkgmap:admin_level4|subst:республика=> респ.
+            |subst:область=> обл.
+            |subst:район=> р-н
+            |subst:округ=> окр.
+            |subst:край=> кр.
+            }' }
+
 addr:street ~ '.*(улица).*' {set addr:street='${addr:street|subst:улица=>} ул.'}
 addr:street ~ '.*(переулок).*' {set addr:street='${addr:street|subst:переулок=>} пер.'}
 addr:street ~ '.*(проспект).*' {set addr:street='${addr:street|subst:проспект=>} пр.'}
@@ -42,3 +49,4 @@ addr:street ~ '.*(набережная).*' {set addr:street='${addr:street|subst
 addr:street ~ '.*(шоссе).*' {set addr:street='${addr:street|subst:шоссе=>} шоссе'}
 addr:street ~ '.*(зимник).*' {set addr:street='${addr:street|subst:зимник=>} зим.'}
 
+#mkgmap:admin_level6 ~ '.*(городской округ).*' { set mkgmap:admin_level6='${mkgmap:admin_level6|subst:городской округ=>} ГО'}

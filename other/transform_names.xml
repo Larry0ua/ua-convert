@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<translations>
+ 
+  <translation>
+    <name>Simplify Access</name>
+    <description>Rename highways to make their names shorter.</description>
+    <match type="way">
+      <tag k="highway" v=".*"/>
+      <tag k="name" v="(\S)(\S+) (\S+) вулиця" match_id="street2w"/>
+      <tag k="name" v="(\S+) вулиця" match_id="street1w"/>
+      <tag k="name" v="(\S)(\S+) (\S+) проспект" match_id="prosp2w"/>
+      <tag k="name" v="(\S+) проспект" match_id="prosp1w"/>
+    </match>
+    <output>
+      <copy-all/>
+      <tag from_match="street2w" k="name" v="{3} {1}. вул."/>
+      <tag from_match="street1w" k="name" v="{1} вул."/>
+      <tag from_match="prosp2w" k="name" v="{3} {1}. просп."/>
+      <tag from_match="prosp1w" k="name" v="{1} просп."/>
+    </output>
+  </translation>
+ 
+</translations>

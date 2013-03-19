@@ -21,7 +21,7 @@ mkgmap:country=RUS & mkgmap:city!=* & mkgmap:admin_level6=* { set mkgmap:city='$
 # Ukraine = UKR
 mkgmap:country=UKR & mkgmap:region!=* & mkgmap:admin_level4=* & place!=* { set mkgmap:region='${mkgmap:admin_level4}' }
 mkgmap:country=UKR & mkgmap:city!=* & place=* { set mkgmap:city='${place}' }
-mkgmap:country=UKR & mkgmap:region!=* & mkgmap:admin_level4=* & mkgmap:admin_level6=* { set mkgmap:region='${mkgmap:admin_level6}, ${mkgmap:admin_level4}' }
+mkgmap:country=UKR & mkgmap:region!=* & place!=city_district & mkgmap:admin_level4=* & mkgmap:admin_level6=* { set mkgmap:region='${mkgmap:admin_level6}, ${mkgmap:admin_level4}' }
 
 # common rules for all the rest of countries
 mkgmap:region!=* & mkgmap:admin_level6=* { set mkgmap:region='${mkgmap:admin_level6}' } 

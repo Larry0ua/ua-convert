@@ -8,3 +8,4 @@ osmconvert.exe
 osmfilter.exe
 wget.exe
 getbound.pl
+osmosis/

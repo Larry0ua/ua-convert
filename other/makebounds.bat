@@ -2,7 +2,7 @@
 ..\executable\osmfilter ..\UA.o5m --keep-nodes= --keep-ways-relations="boundary=administrative =postal_code postal_code= place=" --out-o5m >..\ua-boundaries.o5m
 ..\executable\osmconvert ..\ua-boundaries.o5m --out-pbf -o=..\ua-boundaries.pbf
 
-..\executable\osmosis\bin\osmosis.bat ^
+call ..\executable\osmosis\bin\osmosis.bat ^
  --read-pbf file=..\ua-boundaries.pbf outPipe.0=data1 ^
  --read-pbf file=..\ua-boundaries.pbf outPipe.0=data2 ^
  --tag-transform file=transform_places.xml inPipe.0=data1 outPipe.0=5 ^

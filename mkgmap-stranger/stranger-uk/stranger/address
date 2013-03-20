@@ -20,6 +20,7 @@ mkgmap:country=RUS & mkgmap:city!=* & mkgmap:admin_level6=* { set mkgmap:city='$
 
 # Ukraine = UKR
 mkgmap:country=UKR & mkgmap:region!=* & (mkgmap:admin_level4!='Київ' & mkgmap:admin_level4!='Севастополь') & mkgmap:admin_level4=* & mkgmap:admin_level6=* { set mkgmap:region='${mkgmap:admin_level6}, ${mkgmap:admin_level4}' }
+mkgmap:country=URK & mkgmap:region!=* & (mkgmap:admin_level4='Київ' | mkgmap:admin_level4='Севастополь') { set mkgmap:region='(${mkgmap:admin_level4})' }
 mkgmap:country=UKR & mkgmap:region!=* & mkgmap:admin_level4=* { set mkgmap:region='${mkgmap:admin_level4}' }
 mkgmap:country=UKR & mkgmap:city!=* & mkgmap:admin_level11=* { set mkgmap:city='${mkgmap:admin_level11}' }
 

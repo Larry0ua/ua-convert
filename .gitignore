@@ -12,4 +12,6 @@ navitel/extracts
 navitel/Log.txt
 *.pbf
 *.o5m
+*.osc
+*.gz
 toftp.bat

@@ -2,10 +2,10 @@
 <translations>
  
   <translation>
-    <name>Simplify Access</name>
-    <description>Simplifies the access restrictions to yes/no. We could limit for specific keys, but lets live dangerously.</description>
+    <name>Fake admin_level=11</name>
+    <description>Adds fake admin_level tag for all place polygons. This is needed for better search generation after creating borders with mkgmap </description>
     <match>
-      <tag k="place" match_id="place" v=".*"/>
+      <tag k="place" match_id="place" v="city|town|village|hamlet"/>
     </match>
     <output>
       <copy-all/>

@@ -11,6 +11,7 @@
       <copy-all/>
       <tag from_match="place" k="admin_level" v="11"/>
       <tag from_match="place" k="boundary" v="administrative"/>
+      <tag from_match="place" k="type" v="boundary"/>
     </output>
   </translation>
  

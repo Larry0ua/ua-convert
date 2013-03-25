@@ -17,4 +17,6 @@ call ..\executable\osmosis\bin\osmosis.bat ^
  --merge inPipe.0=10 inPipe.1=11 outPipe.0=12 ^
  --write-pbf file=..\ua-boundaries.osm.pbf omitmetadata=true compress=deflate inPipe.0=12 
 
+echo Making bounds with mkgmap...
+
 java -cp ..\executable\mkgmap\mkgmap.jar uk.me.parabola.mkgmap.reader.osm.boundary.BoundaryPreprocessor ..\ua-boundaries.osm.pbf ..\executable\mkgmap\bounds

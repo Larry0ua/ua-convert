@@ -19,7 +19,7 @@ function file_link_n_details($name) {
 function print_garmin() {
 	$lst = glob("gmap*.img.zip");
 	if (!$lst) { echo "Нема доступних файлів конвертації в формат Garmin<br>"; return; }
-	echo "Вся Україна (туристичний стиль від Max Vasilev, прокладка маршрута працює, без адресного пошуку)<br>\n<table><tr><th>Опис</th><th>Посилання</th></tr>";
+	echo "Вся Україна (туристичний стиль від Max Vasilev, прокладка маршрута працює, адресний пошук до вулиці)<br>\n<table><tr><th>Опис</th><th>Посилання</th></tr>";
 	if (in_array("gmapsupp.img.zip", $lst))
 		echo "<tr><td>Українська версія</td><td>" . file_link_n_details("gmapsupp.img.zip") . "</td></tr>";
 	if (in_array("gmapsup2.img.zip", $lst))
@@ -28,11 +28,16 @@ function print_garmin() {
 }
 function print_navitel() {
 	$fp = fopen("regions.csv", "r");
-	echo "Конвертація в формат Navitel NM2<br><table><tr><th>Регіон</th><th>Посилання</th></tr>";
+	echo "Конвертація в формат Navitel NM2<br><table><tr><th>Регіон</th><th>Посилання</th><th>Дублікати точок</th></tr>";
 	while (($str = fgets($fp, 1000)) !== FALSE) {
 		$data = explode(',', $str);
 		if (file_exists("Navitel-${data[0]}.nm2.zip")) {
-			echo "<tr><td>" . $data[2] ."</td><td>". file_link_n_details("Navitel-${data[0]}.nm2.zip") . "</td></tr>"; 
+			echo "<tr><td>" . $data[2] ."</td><td>". file_link_n_details("Navitel-${data[0]}.nm2.zip") . "</td><td>";
+			$f = count(array_unique(file("Navitel-${data[0]}.mp.err.htm")));
+			if (!$f) echo "&nbsp;";
+			else
+				echo "<a href='Navitel-${data[0]}.mp.err.htm'>err($f)</a>";
+			echo "</td></tr>";
 		}
 	}
 	echo "</table>";

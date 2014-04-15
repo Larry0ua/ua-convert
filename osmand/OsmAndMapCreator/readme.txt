@@ -1,0 +1,1 @@
+﻿Unpack osmand map creator here

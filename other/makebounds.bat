@@ -15,7 +15,7 @@ call ..\executable\osmosis\bin\osmosis.bat ^
  --used-node inPipe.0=9 outPipe.0=10 ^
  --used-node inPipe.0=7 outPipe.0=11 ^
  --merge inPipe.0=10 inPipe.1=11 outPipe.0=12 ^
- --write-pbf file=..\ua-boundaries.osm.pbf omitmetadata=true compress=deflate inPipe.0=12 
+ --write-pbf file=..\ua-boundaries.osm.pbf omitmetadata=false compress=deflate inPipe.0=12 
 
 echo Making bounds with mkgmap...
 

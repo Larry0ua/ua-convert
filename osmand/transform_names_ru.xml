@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"?>
+<translations>
+ 
+  <translation>
+    <name>Fill name from name:ru</name>
+    <description>Find all tags with name and name:ru.</description>
+    <match mode="and">
+      <tag k="name" match_id="name" v=".*"/>
+      <tag k="name:ru" match_id="name_ru" v=".*"/>
+    </match>
+    <output>
+      <copy-all/>
+        <tag k="name" from_match="name_ru" v="{0}"/>
+     </output>
+  </translation>
+ 
+</translations>

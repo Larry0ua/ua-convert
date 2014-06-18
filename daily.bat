@@ -1,6 +1,11 @@
 rem Script that can be added to scheduler as a daily job
-call D:\Development\php-5.3.6\php.exe genscript.php > daily_diff_merge.bat
-call daily_diff_merge.bat
+cd executable
+osmupdate.exe ../UA.osm.pbf ../UA.0.osm.pbf --hour -v -B=UA.poly --keep-tempfiles
+cd ..
+if exist UA.0.osm.pbf (
+del UA.osm.pbf
+ren UA.0.osm.pbf UA.osm.pbf
+)
 cd osmand
 start process_maps.cmd
 cd ..\mkgmap-stranger

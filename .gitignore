@@ -10,8 +10,12 @@ mkgmap-stranger/stranger/stranger.typ
 navitel/maps
 navitel/extracts
 navitel/Log.txt
+osmand/OsmandMapCreator*
+osmand/temp
+osmand/output
 *.pbf
 *.o5m
 *.osc
 *.gz
 toftp.bat
+toftp.osmand.bat

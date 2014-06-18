@@ -259,11 +259,6 @@ waterway=river [0x1f resolution 19-24 continue]
 waterway=stream & intermittent=yes [0x1020d resolution 21]
 waterway=stream [0x18 resolution 20 continue]
 
-# роутинг по рекам - невидимая линия на 0-м слое (спасибо maptourist.org)
-waterway=canal | waterway=river |
-waterway=rapid | waterway=rapids | whitewater=rapid | whitewater=rapids |
-waterway=drain | waterway=stream {add access = no; add foot = yes; add bicycle = no} [0x0e road_class=0 road_speed=0 resolution 24]
-
 man_made=pipeline {name '${operator}'} [0x28 resolution 22]
 man_made=cutline [0x2d resolution 19]
 

@@ -18,9 +18,9 @@ cd mkgmap-stranger
 call run-stranger.bat
 cd ..
 
-cd navitel
-call generate-navitel.bat
-cd ..
+rem cd navitel
+rem call generate-navitel.bat
+rem cd ..
 
 rem package each file into archive
 call package.bat

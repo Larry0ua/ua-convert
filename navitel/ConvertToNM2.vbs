@@ -31,6 +31,7 @@ Set fso = CreateObject ("Scripting.FileSystemObject")
 Dim strRoot
 strRoot = fso.GetAbsolutePathName (WScript.ScriptFullName + "\..\")
 
+
 Dim log
 Set log = fso.CreateTextFile (strRoot + "\Log.txt")
 
@@ -46,7 +47,8 @@ Dim pFile
 For Each pFile In pMapsFolder.Files
 	Dim strExt
 	strExt = LCase (fso.GetExtensionName (pFile.Path))
-	If strExt = "img" Or strExt = "ntm" Or strExt = "rus" Or strExt = "mp" Then
+
+	If strExt = "mp" And pFile.Size > 0 Then
 		Dim strOutFile
 		strOutFile = fso.GetParentFolderName(pFile.Path) + "\" + fso.GetBaseName (pFile.Path) + ".nm2"
 

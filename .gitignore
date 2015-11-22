@@ -19,3 +19,4 @@ osmand/output
 *.gz
 toftp.bat
 toftp.osmand.bat
+ignore*

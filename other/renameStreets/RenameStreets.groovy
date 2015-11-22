@@ -12,7 +12,9 @@ class Replacements {
     Replacements(String fileName) {
         replacements = [:]
         new File(fileName).splitEachLine('\t', {
-            replacements[it[0]] = it[1]
+            if (it[0] && it[1]) {
+                replacements[it[0]] = it[1]
+            }
         })
     }
 

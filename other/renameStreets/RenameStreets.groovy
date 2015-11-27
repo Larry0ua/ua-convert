@@ -54,7 +54,7 @@ class Replacements {
                 isForReplacement(it.@v)
             }
         }.each {Node node ->
-            // associatedStreet/street relations, highways: move name to old_name, name:xx to old_name:xx, add name and name:uk from new
+            // associatedStreet/street relations, highways: move old_name(:xx) to old_name_2(:xx), move name to old_name, name:xx to old_name:xx, add name and name:uk from new
             if (node.tag.any{it.@v == 'street' || it.@v == 'associatedStreet'}
                     || node.tag.any {it.@k == 'highway' && it.@v in ['motorway','trunk','primary','secondary','tertiary',
                                                                      'unclassified','residential','service','living_street',
@@ -64,11 +64,10 @@ class Replacements {
                 String name = node.tag.find{it.@k=='name'}.@v
                 if (isForReplacement(name)) {
                     def replaced = replace(name)
-                    node.tag.each {
-                        if (it.@k.startsWith('name')) {
-                            it.@k = 'old_' + it.@k
-                        }
-                    }
+
+                    node.tag.findAll{it.@k.startsWith('old_name')}.each{ node.remove(it)}
+                    node.tag.findAll{it.@k.startsWith('name')    }.each{ it.@k = 'old_' + it.@k}
+
                     node.appendNode (new QName("tag"), [k:'name', v:replaced])
                     node.appendNode (new QName("tag"), [k:'name:uk', v:replaced])
                     node.@action = 'modify'

@@ -58,6 +58,7 @@ class Replacements {
             if (node.tag.any{it.@v == 'street' || it.@v == 'associatedStreet'}
                     || node.tag.any {it.@k == 'highway' && it.@v in ['motorway','trunk','primary','secondary','tertiary',
                                                                      'unclassified','residential','service','living_street',
+                                                                     'pedestrian',
                                                                      'motorway_link','trunk_link','primary_link',
                                                                      'secondary_link','tertiary_link']}
             ) {

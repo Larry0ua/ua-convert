@@ -2,7 +2,7 @@ import groovy.xml.QName
 import groovy.xml.XmlUtil
 
 def t = System.currentTimeMillis()
-new Replacements('replacements.txt').renameStreets('d:/Chernivtsi.osm', "d:/Chernivtsi_new.osm")
+new Replacements('replacements.txt').renameStreets('Chernivtsi.osm', "Chernivtsi_new.osm")
 println System.currentTimeMillis() - t
 
 class Replacements {
